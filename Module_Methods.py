@@ -15,6 +15,7 @@ def determineCourseChanges(str):
             'English 8' : '4910Read_08',
             'Science 8' : '4910Science_08'
             }
+        return changes
     elif 'irving park' in str:
         changes = {
             'History 6' : '4913CK_6',
@@ -30,7 +31,7 @@ def determineCourseChanges(str):
             'English 8' : '4913ELA_8',
             'Science 8' : '4913Sci_8'
             }
-        print(changes)
+        return changes
     elif 'prairie' in str:
         changes = {
             'History 6' : '4220SS_06',
@@ -46,6 +47,7 @@ def determineCourseChanges(str):
             'English 8' : '4220Read_08',
             'Science 8' : '4220Sci_08'
             }
+        return changes
     elif 'west belden' in str:
         changes = {
             'History 6' : '7120SS_06',
@@ -61,8 +63,11 @@ def determineCourseChanges(str):
             'English 8' : '7120Read_08',
             'Science 8' : '7120Sci_08'
             }
+        return changes
     else:
         print("Changes were unable to be made")
+        return changes
+
 
 def returnCourseName(str):
     courseName = "";

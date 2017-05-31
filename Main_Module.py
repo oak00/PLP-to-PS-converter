@@ -42,7 +42,6 @@ def determineFile(list):
         csvName = 'glt8-cics west belden-by_course.csv'
     else:
         print("File Not Found")
-
     return csvName
 
 
@@ -80,7 +79,7 @@ csvName = determineFile(files);
 
 with open(csvName) as csvfile:
     
-    Module_Methods.determineCourseChanges(csvName) #Determine which school the data is from and change course numbers accordingly
+    changes = Module_Methods.determineCourseChanges(csvName) #Determine which school the data is from and change course numbers accordingly
     reader = csv.reader(csvfile) #Start reading the csv
     next(reader, None) #Skip header
     for row in reader:
